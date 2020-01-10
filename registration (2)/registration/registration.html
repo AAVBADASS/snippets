@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Registration form</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<style>
+		body {
+			font-family: arial;
+			margin: 0;
+			padding: 0;
+		}
+
+		* {
+			box-sizing: border-box;
+			-webkit-box-sizing: border-box;
+			-moz-box-sizing: border-box;
+			-o-box-sizing: border-box
+		}
+
+		.container {
+			padding: 16px;
+			max-width: 450px;
+			margin: auto;
+			background: linear-gradient(#787ea1, #000033);
+			background: -webkit-linear-gradient(#787ea1, #000033);
+			background: -moz-linear-gradient(#787ea1, #000033);
+			background: -o-linear-gradient(#787ea1, #000033);
+			color: #fff;
+		}
+
+		h1 {
+			text-align: center;
+		}
+
+		input[type=text] {
+			width: 80%;
+			padding: 10px;
+			margin: 5px 0 22px 0;
+			display: inline-block;
+			border: none;
+			background: #f1f1f1;
+			font-size: 17px;
+		}
+
+		button {
+			background: #4caf50;
+			color: #fff;
+			padding: 14px 20px;
+			margin: 8px 0;
+			border: none;
+			cursor: pointer;
+			width: 100%;
+			opacity: 0.9;
+			font-size: 17px;
+		}
+
+		button:hover {
+			opacity: 1;
+		}
+
+		.navbar {
+			overflow: hidden;
+			background-color: #333;
+			font-family: Arial, Helvetica, sans-serif;
+		}
+
+		.navbar a {
+			float: left;
+			font-size: 16px;
+			color: white;
+			text-align: center;
+			padding: 14px 16px;
+			text-decoration: none;
+		}
+
+		.dropdown {
+			float: left;
+			overflow: hidden;
+		}
+
+		.dropdown .dropbtn {
+			font-size: 16px;
+			border: none;
+			outline: none;
+			color: white;
+			padding: 14px 16px;
+			background-color: inherit;
+			font: inherit;
+			margin: 0;
+		}
+
+		.navbar a:hover,
+		.dropdown:hover .dropbtn {
+			background-color: red;
+		}
+
+		.dropdown-content {
+			display: none;
+			position: absolute;
+			background-color: #f9f9f9;
+			width: 100%;
+			left: 0;
+			box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+			z-index: 1;
+		}
+
+		.dropdown-content .header {
+			background: red;
+			padding: 16px;
+			color: white;
+		}
+
+		.dropdown:hover .dropdown-content {
+			display: block;
+		}
+
+		/* Create three equal columns that floats next to each other */
+		.column {
+			float: left;
+			width: 33.33%;
+			padding: 10px;
+			background-color: #ccc;
+			height: 250px;
+		}
+
+		.column a {
+			float: none;
+			color: black;
+			padding: 16px;
+			text-decoration: none;
+			display: block;
+			text-align: left;
+		}
+
+		.column a:hover {
+			background-color: #ddd;
+		}
+
+		/* Clear floats after the columns */
+		.row:after {
+			content: "";
+			display: table;
+			clear: both;
+		}
+
+		.box1 {
+			height: 100vh;
+			width: 100%;
+			background-image: url(img1.jpg);
+			background-size: cover;
+			background-position: center;
+			display: table;
+			background-attachment: fixed;
+		}
+
+		.box2 {
+			height: 100vh;
+			width: 100%;
+			background-image: url(img2.jpg);
+			background-size: cover;
+			background-position: center;
+			display: table;
+			background-attachment: fixed;
+		}
+
+		.box3 {
+			height: 100vh;
+			width: 100%;
+			background-image: url(img3.jpg);
+			background-size: cover;
+			background-position: center;
+			display: table;
+			background-attachment: fixed;
+		}
+
+		.box4 {
+			height: 100vh;
+			width: 100%;
+			background-image: url(img4.jpg);
+			background-size: cover;
+			background-position: center;
+			display: table;
+			background-attachment: fixed;
+		}
+
+		.box5 {
+			height: 100vh;
+			width: 100%;
+			background-image: url(img5.jpg);
+			background-size: cover;
+			background-position: center;
+			display: table;
+			background-attachment: fixed;
+		}
+
+		h2 {
+			font-family: sans-serif;
+			font-size: 48px;
+			color: #fff;
+			margin: 0px;
+			text-align: center;
+			display: table-cell;
+			vertical-align: middle;
+		}
+
+		/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+		@media screen and (max-width: 600px) {
+			.column {
+				width: 100%;
+				height: auto;
+			}
+
+			@media screen and (max-width: 300px) {
+				.signupbtn {
+					height: 100%;
+					width: 100%;
+				}
+
+			}
+	</style>
+</head>
+
+<body>
+
+	<div class="navbar">
+		<a href="#home">Home</a>
+		<a href="#form1">SignUp</a>
+		<div class="dropdown">
+			<button class="dropbtn">Dropdown
+				<i class="fa fa-caret-down"></i>
+			</button>
+			<div class="dropdown-content">
+				<div class="header">
+					<h2>Mega Menu</h2>
+				</div>
+				<div class="row">
+					<div class="column">
+						<h3>Category 1</h3>
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+					<div class="column">
+						<h3>Category 2</h3>
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+					<div class="column">
+						<h3>Category 3</h3>
+						<a href="#">Link 1</a>
+						<a href="#">Link 2</a>
+						<a href="#">Link 3</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<form id="form1" onsubmit="return validation()">
+			<h1>Sign Up Form</h1>
+			<table>
+				<tr>
+					<td>
+						Title:
+					</td>
+					<td>
+						<select id="select">
+							<option value="default">Select</option>
+
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						First Name:
+					</td>
+					<td>
+						<input type="text" name="first name" id="user" required><br>
+						<span id="username" style="color: red;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Last Name:
+					</td>
+					<td>
+						<input type="text" name="last name" id="lastname"><br>
+						<span id="lastname1" style="color: red;">
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Address
+					</td>
+					<td>
+						<input type="text" name="address" id="address"><br>
+						<span id="address1" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						city:
+					</td>
+					<td>
+						<input type="text" name="city:" id="city"><br>
+						<span id="city1" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						State:
+					</td>
+					<td>
+						<input type="text" name="state" id="state"><br>
+						<span id="state1" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Postal code:
+					</td>
+					<td>
+						<input type="text" name="Postal code" id="pcode"><br>
+						<span id="pcode1" style="color: red;"></span>
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Country:
+					</td>
+					<td>
+						<input type="text" name="Country" id="country"><br>
+						<span id="country1" style="color: red;"></span>
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Phone:
+					</td>
+					<td>
+						<input type="text" name="Phone" id="phone">
+						<span id="phone1" class="text-danger font-weight-bold"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Email:
+					</td>
+					<td>
+						<input type="text" name="Email" id="email"><br>
+						<span id="email1" style="color: red;"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Fax:
+					</td>
+					<td>
+						<input type="text" name="Fax">
+						<span id="state" class="text-danger font-weight-bold"></span>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Powered by
+					</td>
+					<td>
+						<input type="radio" name="powered type">PayPal</br>
+						<input type="radio" name="powered type">Manual: pay by arrivals</br>
+						<input type="radio" name="powered type">credit card</br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						Any additional requests:
+					</td>
+					<td>
+						<textarea style="width:85% ;" rows="4" cols="50">
+		</textarea>
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+
+					</td>
+					<td>
+						<input type="checkbox" name="vehicle1" value="Bike"> I agree with<a href="url">
+							Terms&conditions</a><br>
+						</textarea>
+
+					</td>
+				</tr>
+				<tr>
+					<td>
+
+					</td>
+					<div class="clearfix">
+						<td>
+							<button type="submit" class="signupbtn" form="form1" value="Submit">Confirm &
+								checkout</button>
+						</td>
+					</div>
+				</tr>
+
+
+			</table>
+		</form>
+		<table>
+
+		</table>
+	</div>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<br>
+	<section id="home" align="center">
+		<div class="box1">
+			<h2>Welcome to parallax effect</h2>
+		</div>
+		<div class="box2">
+			<h2>Having Fun?</h2>
+		</div>
+		<div class="box3">
+			<h2>Keep on Going</h2>
+		</div>
+		<div class="box4">
+			<h2>Enjoy!</h2>
+		</div>
+		<div class="box5">
+			<h2>Bye!See You later </h2>
+		</div>
+	</section>
+	<script type="text/javascript">
+		validation = () => {
+			var user = document.getElementById('user').value;
+			if (user == "") {
+				document.getElementById('username').innerHTML = "** please fill firstname";
+				return false;
+			}
+			var lastname = document.getElementById('lastname').value;
+			if (lastname == "") {
+				document.getElementById('lastname1').innerHTML = "** please fill lastname";
+				return false;
+			}
+			var address = document.getElementById('address').value;
+			if (address == "") {
+				document.getElementById('address1').innerHTML = "** please fill address";
+				return false;
+			}
+			var city = document.getElementById('city').value;
+			if (city == "") {
+				document.getElementById('city1').innerHTML = "** please fill city";
+				return false;
+			}
+			var state = document.getElementById('state').value;
+			if (state == "") {
+				document.getElementById('state1').innerHTML = "** please fill state";
+				return false;
+			}
+			var pcode = document.getElementById('pcode').value;
+			if (pcode == "") {
+				document.getElementById('pcode1').innerHTML = "** please fill pcode";
+				return false;
+			}
+			if (pcode.length != 6) {
+				alert("pin code must be of six digits");
+				return false;
+
+			}
+			var country = document.getElementById('country').value;
+			if (country == "") {
+				document.getElementById('country1').innerHTML = "** please fill country";
+				return false;
+			}
+			var reg = /^([A-Za-z0-9_\-\.])+\@([A-Za-z0-9_\-\.])+\.([A-Za-z]{2,4})$/;
+			var email = document.getElementById('email').value;
+			if (reg.test(email) == false || email == "") {
+				document.getElementById('email1').innerHTML = "** please fill email properly";
+				return false;
+			}
+
+
+		}
+		var select = document.getElementById("select"),
+			arr = ["Mr", "Ms", "Mrs"];
+		arr.forEach((element, i) => {
+			var option = document.createElement("OPTION");
+			txt = document.createTextNode(arr[i]);
+			option.appendChild(txt);
+			option.setAttribute("value", arr[i]);
+			select.insertBefore(option, select.lastChild);
+		});
+	</script>
+</body>
+
+</html>
